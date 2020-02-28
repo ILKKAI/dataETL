@@ -1,0 +1,46 @@
+MongoDB:
+  HOST_35:
+    HOST: 172.22.69.35
+    PORT: 20000
+    DB: spider_data
+
+  HOST_25:
+    HOST: 172.22.67.25
+    PORT: 20000
+    DB: spider_data
+
+  HOST_41:
+    HOST: 172.22.69.41
+    PORT: 20000
+    DB: spider_data
+
+  HOST_local:
+    HOST: 127.0.0.1
+    PORT: 27017
+    DB: spider_data
+
+HBase:
+  HOST: 172.22.69.36
+  # thrift 端口
+  PORT: 9090
+  TABLE: spider_data_test3
+  COLUM_FAMILY: C
+
+MySQL:
+  HOST_43:
+    HOST: 172.22.69.43
+    PORT: 3306
+    DATABASE: spider
+    TABLE: spi_scra_entity
+    USER: spider
+    PASSWORD: spider#O2018
+
+  HOST_25:
+    HOST: 172.22.67.25
+    PORT: 3306
+    DATABASE: chabei
+    TABLE: sys_dict_item
+    USER: root
+    PASSWORD: Code123!@#
+
+AI_PATH: C:/Users/kevin/Desktop/ai-finassist/INTERFACE/TEXTRANK.py

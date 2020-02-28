@@ -1,0 +1,118 @@
+phoenix 视图
+
+
+微博基本信息 WEIBOBASICINFO
+
+pheonix视图：
+create view "WEIBOBASICINFO"("ID" varchar primary key,
+"C"."BANK_CODE_" varchar,
+"C"."BANK_NAME_" varchar,
+"C"."CREATE_TIME_" varchar,
+"C"."AREA_CODE_" varchar,
+"F"."WEIBO_CODE_" varchar,
+"F"."MAIN_URL_" varchar,
+"F"."NAME_" varchar,
+"F"."FOCUS_" varchar,
+"F"."FANS_" varchar,
+"F"."COMPANY_URL_" varchar,
+"F"."COMPANY_" varchar,
+"F"."DETAILED_URL_" varchar,
+"F"."VIRIFIED_" varchar,
+"F"."BIREF_" varchar,
+"F"."DEALTIME_" varchar,
+"F"."ENTITY_NAME_" varchar,
+"F"."_id" varchar,
+"S"."STATUS_" varchar
+);
+
+
+微博 WEIBOINFO
+
+pheonix视图：
+create view "WEIBOINFO"("ID" varchar primary key,
+"C"."BANK_CODE_" varchar,
+"C"."BANK_NAME_" varchar,
+"C"."PERIOD_CODE_" varchar,
+"C"."CREATE_TIME_" varchar,
+"F"."CONTENT_CODE_" varchar,
+"F"."CONTENT_URL_" varchar,
+"F"."RELAYS_" varchar,
+"F"."REPLIES_" varchar,
+"F"."CONTENT_IMAGES" varchar,
+"F"."CONTENT_" varchar,
+"F"."INFO_COMMENTS_" varchar,
+"S"."STATUS_" varchar
+);
+
+
+微信 WECHAT
+
+pheonix视图：
+create view "WECHAT"("ID" varchar primary key,
+"C"."BANK_CODE_" varchar,
+"C"."BANK_NAME_" varchar,
+"C"."CREATE_TIME_" varchar,
+"C"."PERIOD_CODE_" varchar,
+"F"."BANK_NAME_" varchar,
+"F"."CONTENT_" varchar,
+"F"."ENTITY_CODE_" varchar,
+"F"."ENTITY_NAME_" varchar,
+"F"."SOURCE" varchar,
+"F"."TITLE_" varchar,
+"F"."WECHAT_" varchar,
+"F"."_id" varchar,
+"S"."STATUS_" varchar
+);
+
+
+网点 ORGANIZE_FINASSIST
+
+pheonix视图：
+create view "ORGANIZE_FINASSIST"("ID" varchar primary key,
+"C"."BANK_CODE_" varchar,
+"C"."BANK_NAME_" varchar,
+"C"."CREATE_TIME_" varchar,
+"C"."AREA_CODE_" varchar,
+"F"."ADDR_" varchar,
+"F"."CITY_CODE_" varchar,
+"F"."CITY_NAME_" varchar,
+"F"."LAT_" varchar,
+"F"."LNG_" varchar,
+"F"."NAME_" varchar,
+"F"."PROVINCE_CODE_" varchar,
+"F"."PROVINCE_NAME_" varchar,
+"F"."ENTITY_CODE_" varchar,
+"F"."_id" varchar,
+"F"."DEALTIME_" varchar,
+"S"."STATUS_" varchar
+);
+
+
+学校 SCHOOL_FINASSIST
+
+pheonix视图：
+create view "SCHOOL_FINASSIST"("ID" varchar primary key,
+"C"."CREATE_TIME_" varchar,
+"C"."AREA_CODE_" varchar,
+"F"."NAME_" varchar,
+"F"."IMAGES_" varchar,
+"F"."GRADE_" varchar,
+"F"."PROVINCE_CODE_" varchar,
+"F"."PROVINCE_NAME_" varchar,
+"F"."CITY_CODE_" varchar,
+"F"."CITY_NAME_" varchar,
+"F"."DISTRICT_CODE_" varchar,
+"F"."DISTRICT_NAME_" varchar,
+"F"."SCHOOL_TYPE_" varchar,
+"F"."PERIOD_" varchar,
+"F"."TEL_" varchar,
+"F"."WEBSITE_" varchar,
+"F"."ADDR_" varchar,
+"F"."BRIEF_" varchar,
+"F"."URL_" varchar,
+"F"."DEALTIME_" varchar,
+"F"."ENTITY_NAME_" varchar,
+"F"."ENTITY_CODE_" varchar,
+"F"."_id" varchar,
+"S"."STATUS_" varchar
+);
